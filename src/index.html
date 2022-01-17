@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../dist/style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="font-['Poppins'] bg-[url('../images/bg-intro-mobile.png')] bg-[#FF7979] bg-cover bg-no-repeat bg-[center_center] w-full h-auto flex flex-col xl:flex-row xl:items-center xl:justify-center xl:bg-[url('../images/bg-intro-desktop.png')] xl:bg-cover xl:h-[800px]"
+  >
+    <header
+      class="mt-[23.46vw] mx-[6.4vw] mb-[17.06vw] flex flex-col justify-center text-center xl:w-[51.04vw] xl:ml-[11.45vw] xl:my-auto xl:mr-[3.125vw] xl:text-left"
+    >
+      <h1
+        class="mb-4 font-bold text-[28px] leading-[36px] tracking-[-0.29px] text-white xl:text-[50px] xl:leading-[55px] xl:tracking-[-0.52px] xl:mb-[11px]"
+      >
+        Learn to code by watching others
+      </h1>
+      <p
+        class="font-medium text-base leading-[26px] tracking-normal text-white"
+      >
+        See how experienced developers solve problems in real-time. Watching
+        scripted tutorials is great, but understanding how developers think is
+        invaluable.
+      </p>
+    </header>
+
+    <main class="mx-[6.4vw] mb-[18.13vw] xl:w-[48.95vw] xl:ml-0  xl:mr-[11.45vw] xl:my-auto xl:h-auto">
+      <div
+        class="mb-6 px-[17.86vw] py-[4.8vw] text-center bg-[#5E54A4] rounded-[10px] drop-shadow-[0_8px_0px_rgba(0,0,0,0.1469)] xl:px-[0] xl:py-[1.18vw]"
+      >
+        <p
+          class="font-normal text-[15px] leading-[26px] tracking-[0.27px] text-white"
+        >
+          <span class="font-bold">Try it free 7 days</span> then $20/mo.
+          thereafter
+        </p>
+      </div>
+      <form id="form"
+        class="relative p-6 bg-white drop-shadow-[0_8px_0px_rgba(0,0,0,0.1469)] w-[87.2vw] h-auto rounded-[10px] xl:w-[540px] xl:h-auto xl:p-10 flex flex-col items-center"
+      >
+      <div class="relative mb-4 xl:block xl:mb-5">
+        <input
+        class="form-input relative mb-0 w-[74.4vw] h-[14.93vw] outline-none border border-solid border-[#DEDEDE] rounded-[5px] pl-[5.176vw] py-[4vw] placeholder:font-semibold placeholder:text-[14px] placeholder:leading-[26px] placeholder:tracking-[0.25px] placeholder:text-[#3D3B48] placeholder:opacity-75
+        xl:w-[31.94vw] xl:h-[3.88vw] xl:pl-[2.22vw] xl:py-[1.04vw] xl:mb-0"
+        type="text"
+        name="firstName"
+        id="firstName"
+        placeholder="First Name"
+      />
+      <img
+          class="error-icon absolute right-[4.26vw] top-[4.26vw] xl:left-[28.40vw] xl:top-[1.11vw] hidden"
+          src="../images/icon-error.svg"
+          alt=""
+        />
+      <p
+          class="error-message mt-1 font-normal text-[11px] leading-[13px] tracking-normal text-[#F96464] text-right italic hidden xl:mt-[6px]"
+        >
+          First Name cannot be empty
+        </p>
+      </div>
+      <div class="relative mb-4 xl:block xl:mb-5">
+        <input
+        class="form-input relative mb-0 w-[74.4vw] h-[14.93vw] outline-none border border-solid border-[#DEDEDE] rounded-[5px] pl-[5.176vw] py-[4vw] placeholder:font-semibold placeholder:text-[14px] placeholder:leading-[26px] placeholder:tracking-[0.25px] placeholder:text-[#3D3B48] placeholder:opacity-75
+        xl:w-[31.94vw] xl:h-[3.88vw] xl:pl-[2.22vw] xl:py-[1.04vw] xl:mb-0"
+        type="text"
+        name="lastName"
+        id="lastName"
+        placeholder="Last Name"
+      />
+      <img
+          class="error-icon absolute right-[4.26vw] top-[4.26vw] xl:left-[28.40vw] xl:top-[1.11vw] hidden"
+          src="../images/icon-error.svg"
+          alt=""
+        />
+      <p
+          class="error-message mt-1 font-normal text-[11px] leading-[13px] tracking-normal text-[#F96464] text-right  hidden italic xl:mt-[6px]"
+        >
+          Last Name cannot be empty
+        </p>
+      </div>
+      <div class="relative mb-4 xl:block xl:mb-5">
+        <input
+        class="form-input relative mb-0 w-[74.4vw] h-[14.93vw] outline-none border border-solid border-[#DEDEDE] rounded-[5px] pl-[5.176vw] py-[4vw] placeholder:font-semibold placeholder:text-[14px] placeholder:leading-[26px] placeholder:tracking-[0.25px] placeholder:text-[#3D3B48] placeholder:opacity-75
+        xl:w-[31.94vw] xl:h-[3.88vw] xl:pl-[2.22vw] xl:py-[1.04vw] xl:mb-0 invalid:border-[#FF7979] invalid:border-[2px] peer"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email Address"
+      />
+      <img
+          class="error-icon absolute right-[4.26vw] top-[4.26vw] xl:left-[28.40vw] xl:top-[1.11vw] hidden peer-invalid:block"
+          src="../images/icon-error.svg"
+          alt=""
+        />
+      <p
+          class="error-message mt-1 font-normal text-[11px] leading-[13px] tracking-normal text-[#F96464] text-right hidden xl:mt-[6px] peer-invalid:block italic"
+        >
+          Looks like this is not an email
+        </p>
+      </div>
+      <div class="relative mb-4 xl:block xl:mb-5">
+        <input
+        class="form-input relative mb-0 w-[74.4vw] h-[14.93vw] outline-none border border-solid border-[#DEDEDE] rounded-[5px] pl-[5.176vw] py-[4vw] placeholder:font-semibold placeholder:text-[14px] placeholder:leading-[26px] placeholder:tracking-[0.25px] placeholder:text-[#3D3B48] placeholder:opacity-75
+        xl:w-[31.94vw] xl:h-[3.88vw] xl:pl-[2.22vw] xl:py-[1.04vw] xl:mb-0 peer"
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+      <img
+          class="error-icon absolute right-[4.26vw] top-[4.26vw] xl:left-[28.40vw] xl:top-[1.11vw] hidden"
+          src="../images/icon-error.svg"
+          alt=""
+        />
+      <p
+          class="error-message mt-1 font-normal text-[11px] leading-[13px] tracking-normal text-[#F96464] text-right hidden italic xl:mt-[6px]"
+        >
+          Password cannot be empty
+        </p>
+      </div>
+      <div>
+        <button
+        class="mb-2 w-[74.4vw] h-[14.93vw] outline-none bg-[#38CC8B] rounded-[5px] px-[5.06vw] py-[4vw] uppercase font-semibold text-[15px] leading-[26px] tracking-[1px] text-white shadow-inner xl:w-[31.94vw] xl:h-[3.88vw] xl:py-[1.04vw] active:bg-[#77E2B3]"
+        type="submit"
+        name="submit"
+      />claim your free trial</button>
+      <p class="mx-auto w-[66.4vw] text-center font-medium text-[11px] leading-[21px] tracking-normal text-[#BAB7D4] xl:w-[25.625vw]  xl:mx-auto xl:leading-[26px]">By
+        clicking the button, you are agreeing to our <span class="font-bold text-[#FF7979]">Terms and Services</span></p>
+      </div>
+       
+      </form>
+    </main>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
